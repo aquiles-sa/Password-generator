@@ -43,8 +43,10 @@ while True:
     
     if continueOperation == 'y':
         continue
+    elif continueOperation == 'n':
+          print("-" * 10 + " Thanks for using! " + "-" * 10)
     
-    while continueOperation != 'y' or continueOperation != 'n':
+    while continueOperation != 'n':
         continueOperation = input("Would you like to generate another password? [Y/N]: ").lower()
         
         if continueOperation == 'n':
